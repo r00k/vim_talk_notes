@@ -1,9 +1,7 @@
 Hi Boston.rb!
 
-FIRST: a shameless plug!
-
-If you liked my talk, you'll probably dig my screencast: Vim for Rails Developers
-Check it out here: http://www.codeulatescreencasts.com/products/vim-for-rails-developers
+__FIRST: If you liked my talk, you'll probably dig my screencast: Vim for Rails Developers
+Check it out here: http://www.codeulatescreencasts.com/products/vim-for-rails-developers__
 
 
 SECOND: please give me your feedback on SpeakerRate: 
