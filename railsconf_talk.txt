@@ -1,12 +1,34 @@
+        
+        
+        
+        
+        Hi Boston.rb!
+
+        FIRST: a shameless plug!
+
+        If you liked my talk, you'll probably dig my screencast: Vim for Rails Developers
+        Check it out here: http://www.codeulatescreencasts.com/products/vim-for-rails-developers
+
+
+        SECOND: please give me your feedback on SpeakerRate: 
+        http://speakerrate.com/talks/3213-write-code-faster-expert-level-vim
+
+
+        FINALLY: check out the notes below (and thanks for having me!)
+
+
+
+
+
+
+
 This talk is in beta!  Will be asking for feedback.
 Survey: if vim expertise is 1 of 3 levels
 No slides, but notes.  Please follow along. 
 
-Intro
-  This is the first technical talk I've ever given, so I did some research on how to give
-  a good talk.  I found a document called Conference Presentation Judo that recommends
-  you cut your introduction and start immediately on the most useful content, so here 
-  it is: these are the four best things to do to achieve vim mastery.
+--------------------------------------------------
+
+Four best tasks for vim master:
 
 First: learn to RTFM
   spend some time each day in vim help
@@ -28,11 +50,11 @@ Fourth: Learn all the single-letter commands
   80/20
   quiz yourself: what does q do?  semicolon?
 
-
-
 If you do these three fundamental things, you are well on your way to vim mastery.
 After these, the rest of what I'm going to show
 you is just gravy.  But sometimes the gravy is the best part, so let's dig in.
+
+--------------------------------------------------
 
 I'm going to teach you how to fish, or how to RTFM
   :h instead of help
@@ -42,7 +64,7 @@ I'm going to teach you how to fish, or how to RTFM
   tab and Ctrl+D (works everywhere, colorscheme)
   links to good docs
 
-** If there were three levels of learning (almost none, medium, a lot) **
+--------------------------------------------------
 
 Rails.vim
   2 strengths: you don't need to leave vim, and navigation
@@ -63,6 +85,8 @@ Rails.vim
   Rdoc
   Rdoc!
 
+--------------------------------------------------
+
 Fugitive.vim
   Statusline
   Namespaced under :G
@@ -73,14 +97,10 @@ Fugitive.vim
   Gblame selection -> Gblame whole file -> <CR> to reblame ->  o to open commit
   Gmove
 
-Tags
-  setup: install exuberant ctags, run ctags -R in rails dir (after vendoring rails so it can pick up tags)
-  respond_to -> :ts
-  :ts[elect] to show all matching tags
+--------------------------------------------------
 
-** CHECK ON GOAL. ** 
+Random smattering of editing stuff:
 
-Stuff:
   * Change/delete inside ( { " '
   * caw, 'a' works on surrounding marks too
   * Text states (think branches of undo tree): g-, g+, :earlier, :later
@@ -101,10 +121,15 @@ Stuff:
   * Fix transposed chars
   * tilde
 
-End
-  Shameless plug
+--------------------------------------------------
+Tags (didn't get covered)
+  great for exploring the rails source!  vendor rails first in vendor/rails
+  install exuberant ctags, run ctags -R in app dir
+  try typing :tag ActiveRecord::Base, or :tag respond_to
+  :ts[elect] to shows all matching tags if there are multiple
 
-Snipmate?
+Snipmate (didn't get covered)
+  will help speed you up!  google snipmate and install
   def
   defp
   deft
@@ -113,23 +138,3 @@ Snipmate?
   cla (multi-choice AND calls out to vim)
   easy to write your own
 
-=====================================================================================================
-
-TODOs:
-  * Get software for showing keystrokes
-  * Post notes file 
-  * Setup
-    * Blow away code/demo
-    * Increase font size
-    * cd to ~/code
-    * Start keycastr
-
-
-Notes:
-
-So: the goal for tomorrow at the library is to
-	a. decide on a list of useful stuff to show them 
-	b. research this stuff where necessary
-	c. show the best shit
-        d. don't cram in bad stuff to fill time -- find more quality content!
-    
