@@ -1,7 +1,7 @@
 Hi Boston.rb!
 
 == FIRST: If you liked my talk, you'll probably dig my screencast: Vim for Rails Developers
-== Check it out here: http://www.codeulatescreencasts.com/products/vim-for-rails-developers ==
+=== Check it out here: http://www.codeulatescreencasts.com/products/vim-for-rails-developers
 
 SECOND: please give me your feedback on SpeakerRate: 
 http://speakerrate.com/talks/3213-write-code-faster-expert-level-vim
