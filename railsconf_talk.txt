@@ -1,0 +1,135 @@
+This talk is in beta!  Will be asking for feedback.
+Survey: if vim expertise is 1 of 3 levels
+No slides, but notes.  Please follow along. 
+
+Intro
+  This is the first technical talk I've ever given, so I did some research on how to give
+  a good talk.  I found a document called Conference Presentation Judo that recommends
+  you cut your introduction and start immediately on the most useful content, so here 
+  it is: these are the four best things to do to achieve vim mastery.
+
+First: learn to RTFM
+  spend some time each day in vim help
+  it ain't easy, but I'm gonna show you
+  read plugin docs too
+
+Second: Make a cheat sheet
+  Make your OWN 
+  Vim is like an instrument
+  Need to learn the command, apply it in practice, and then turn it into muscle memory
+
+Third: Have a tool-sharpening list
+  Pay attention to stuff that sucks
+  Foo/foo example
+  Don't break your flow, come back to it
+  Put it on the back of your cheat sheet
+
+Fourth: Learn all the single-letter commands
+  80/20
+  quiz yourself: what does q do?  semicolon?
+
+
+
+If you do these three fundamental things, you are well on your way to vim mastery.
+After these, the rest of what I'm going to show
+you is just gravy.  But sometimes the gravy is the best part, so let's dig in.
+
+I'm going to teach you how to fish, or how to RTFM
+  :h instead of help
+  point out C-], C-o (both pop up all over the place)
+  :h window 
+  :h i_Ctrl+O (show)
+  tab and Ctrl+D (works everywhere, colorscheme)
+  links to good docs
+
+** If there were three levels of learning (almost none, medium, a lot) **
+
+Rails.vim
+  2 strengths: you don't need to leave vim, and navigation
+  Namespaced under :R
+  Rails code/demo
+  Rgenerate scaffold user
+  Rmigration
+  Rinvert (point out remove_column gotcha)
+  (go to controller) - gf to User and ApplicationController
+  Rmodel, RVunittest, RSunittest
+  Use Rake on functional test, fails, Rmigration
+  Rake runs migration
+  Quickfix, cycle with :cn and :cp 
+  Rextract
+  Rrunner (create user)
+  Rp User.last
+  Rserver, but what if other instance Rserver!
+  Rdoc
+  Rdoc!
+
+Fugitive.vim
+  Statusline
+  Namespaced under :G
+  (use s3_demo)
+  (make a change) 
+  Glog
+  Gstatus -> D -> "-" -> Gcommit -> Gedit
+  Gblame selection -> Gblame whole file -> <CR> to reblame ->  o to open commit
+  Gmove
+
+Tags
+  setup: install exuberant ctags, run ctags -R in rails dir (after vendoring rails so it can pick up tags)
+  respond_to -> :ts
+  :ts[elect] to show all matching tags
+
+** CHECK ON GOAL. ** 
+
+Stuff:
+  * Change/delete inside ( { " '
+  * caw, 'a' works on surrounding marks too
+  * Text states (think branches of undo tree): g-, g+, :earlier, :later
+  * Registers   
+    * Anyone not know what registers are?
+    * Named registers
+    * How to repeatedly put something (named works, but "0 always holds last yank)
+  * Change surroundings (surround.vim) 
+    * interpolated string
+    * delete surroundings
+    * change tags
+  * c-o for undoing jumps
+  * Leader e / Leader s / Leader v
+  * % (matchit.vim)
+  * Edit that stuff down there: H, M, L
+  * gi (go to last insert)
+  * C+w for delete word
+  * Fix transposed chars
+  * tilde
+
+End
+  Shameless plug
+
+Snipmate?
+  def
+  defp
+  deft
+  each
+  ed
+  cla (multi-choice AND calls out to vim)
+  easy to write your own
+
+=====================================================================================================
+
+TODOs:
+  * Get software for showing keystrokes
+  * Post notes file 
+  * Setup
+    * Blow away code/demo
+    * Increase font size
+    * cd to ~/code
+    * Start keycastr
+
+
+Notes:
+
+So: the goal for tomorrow at the library is to
+	a. decide on a list of useful stuff to show them 
+	b. research this stuff where necessary
+	c. show the best shit
+        d. don't cram in bad stuff to fill time -- find more quality content!
+    
