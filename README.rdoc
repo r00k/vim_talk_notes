@@ -3,57 +3,107 @@ Hi Boston.rb!
 == FIRST: If you liked my talk, you'll probably dig my screencast: Vim for Rails Developers
 === Check it out here: http://www.codeulatescreencasts.com/products/vim-for-rails-developers
 
-SECOND: please give me your feedback on SpeakerRate: 
-http://speakerrate.com/talks/3213-write-code-faster-expert-level-vim
+== SECOND: If you're in or near Boston, I'm giving a vim training on June 25th
+=== Check it out here: https://training.thoughtbot.com/courses/12-vim-for-rubyists/registrations/new
 
+FINALLY: check out the notes below (and thanks for coming to the talk!)
 
-FINALLY: check out the notes below (and thanks for having me!)
+-------------------------------------------------- 
 
+(skip the intro!)
 
+4 fundamental techniques for mastering vim
 
-This talk is in beta!  Will be asking for feedback.
-Survey: if vim expertise is 1 of 3 levels
-No slides, but notes.  Please follow along. 
+First: Read the freakin' manual
+  vim is the best-documented open source tool I've ever used
+  a ton of effort has gone into the help
+  the ROI is high
+  two problems:
+    it takes some practice
+    you're gonna forget what you read
 
---------------------------------------------------
+Second: Keep a cheat sheet on your desk
+  learning vim is a process of accretion
+  gradually increase by the steady addition of smaller parts
+  the only way to become an expert is by steadily learning commands
+  the best way to learn lots of commands is by focusing on a few at a time
+  keep your eyes open for chances to use the command
+  to build muscle memory, you must use it in practice
+  i'll back up
 
-Four best tasks for vim master:
-
-First: learn to RTFM
-  spend some time each day in vim help
-  it ain't easy, but I'm gonna show you
-  read plugin docs too
-
-Second: Make a cheat sheet
-  Make your OWN 
-  Vim is like an instrument
-  Need to learn the command, apply it in practice, and then turn it into muscle memory
-
-Third: Have a tool-sharpening list
-  Pay attention to stuff that sucks
-  Foo/foo example
+Third: Keep a tool sharpening list
+  annoyances and inefficiencies
+  :Q bound to :q example (question, show of hands)
+  slowly sanding down the rough edges in your environment
   Don't break your flow, come back to it
   Put it on the back of your cheat sheet
 
 Fourth: Learn all the single-letter commands
-  80/20
-  quiz yourself: what does q do?  semicolon?
+  Pareto or 80/20
+  quiz yourself: what does t do? capital t? semicolon?
+  graphical cheat sheet
 
-If you do these three fundamental things, you are well on your way to vim mastery.
-After these, the rest of what I'm going to show
-you is just gravy.  But sometimes the gravy is the best part, so let's dig in.
+Bonus: stay on the home row
+  don't use the arrow keys
+  don't use escape (can use C-[)
 
---------------------------------------------------
+If you do these five fundamental things, you are well on your way to vim mastery.
+IF you fall asleep now, you'll have already seen the most-important stuff.
+After these, the rest of what I'm going to show you is just gravy.  
+But sometimes the gravy is the best part, so let's dig in.
 
-I'm going to teach you how to fish, or how to RTFM
-  :h instead of help
-  point out C-], C-o (both pop up all over the place)
-  :h window 
-  :h i_Ctrl+O (show)
-  tab and Ctrl+D (works everywhere, colorscheme)
-  links to good docs
+Total noob?  Use vimtutor.
 
---------------------------------------------------
+Discuss the layout of the rest of the talk.
+
+RTFM
+  two most-important commands
+  :h buffers
+  recommend Editing Effectively
+  what if you don't know what you want? tab complete and C-d
+  #vim on freenode
+  vimtips wiki - specifically top content
+  life, the universe, and everything - 42
+
+(16 minutes)
+
+Grab-bag (25 minutes)
+  Registers   
+    basic example
+    1-9 is last deletes
+    Unnamed register
+    Named registers
+      "% - useful for sourcing vimrc 
+      "0 last yank
+  Macros
+    macros are related to registers
+    macro is just a recording of keystrokes into a register
+    change all methods to self
+    tips for reusability
+      move the cursor by searching
+      pay attention to the start and end points
+  Marks
+    A-Z are global
+    0-9 where you exited vim
+  Text states (think branches of undo tree): 
+    g-, g+, 
+    :earlier, :later
+    joke
+  Bind lots of leaders
+  C-s
+  c-o for undoing jumps
+  set number so you can jump to lines (holdng j or k is a vim smell)
+  C-d and C-u
+  gi (go to last insert)
+  Change/delete inside ( { " '
+  caw
+
+** Take a break.  Poll the audience. **
+
+Tags
+  setup: install exuberant ctags, run ctags -R in rails dir (after vendoring rails so it can pick up tags)
+  respond_to -> :ts
+  :ts[elect] to show all matching tags
 
 Rails.vim
   2 strengths: you don't need to leave vim, and navigation
@@ -61,64 +111,27 @@ Rails.vim
   Rails code/demo
   Rgenerate scaffold user
   Rmigration
-  Rinvert (point out remove_column gotcha)
+  Rinvert (point out remove_column gotcha, but REMOVE the code)
   (go to controller) - gf to User and ApplicationController
   Rmodel, RVunittest, RSunittest
   Use Rake on functional test, fails, Rmigration
   Rake runs migration
-  Quickfix, cycle with :cn and :cp 
   Rextract
-  Rrunner (create user)
-  Rp User.last
   Rserver, but what if other instance Rserver!
   Rdoc
-  Rdoc!
 
---------------------------------------------------
+FuzzyFinder
 
-Fugitive.vim
-  Statusline
-  Namespaced under :G
-  (use s3_demo)
-  (make a change) 
-  Glog
-  Gstatus -> D -> "-" -> Gcommit -> Gedit
-  Gblame selection -> Gblame whole file -> <CR> to reblame ->  o to open commit
-  Gmove
+(surround.vim) 
+    interpolated string
+    delete surroundings
+    change tags
 
---------------------------------------------------
+=====================================================================================================
 
-Random smattering of editing stuff:
+Bonus material:
 
-  * Change/delete inside ( { " '
-  * caw, 'a' works on surrounding marks too
-  * Text states (think branches of undo tree): g-, g+, :earlier, :later
-  * Registers   
-    * Anyone not know what registers are?
-    * Named registers
-    * How to repeatedly put something (named works, but "0 always holds last yank)
-  * Change surroundings (surround.vim) 
-    * interpolated string
-    * delete surroundings
-    * change tags
-  * c-o for undoing jumps
-  * Leader e / Leader s / Leader v
-  * % (matchit.vim)
-  * Edit that stuff down there: H, M, L
-  * gi (go to last insert)
-  * C+w for delete word
-  * Fix transposed chars
-  * tilde
-
---------------------------------------------------
-Tags (didn't get covered)
-  great for exploring the rails source!  vendor rails first in vendor/rails
-  install exuberant ctags, run ctags -R in app dir
-  try typing :tag ActiveRecord::Base, or :tag respond_to
-  :ts[elect] to shows all matching tags if there are multiple
-
-Snipmate (didn't get covered)
-  will help speed you up!  google snipmate and install
+Snipmate
   def
   defp
   deft
@@ -127,3 +140,13 @@ Snipmate (didn't get covered)
   cla (multi-choice AND calls out to vim)
   easy to write your own
 
+Fugitive.vim
+  Statusline
+  Gcommit -a -m "foo"
+  Binding these
+  Gmove
+
+General stuff
+  C+w for delete word
+  Fix transposed chars
+  tilde
