@@ -6,7 +6,7 @@ Hi Boston.rb!
 == SECOND: If you're in or near Boston, I'm giving a vim training on June 25th
 === Check it out here: https://training.thoughtbot.com/courses/12-vim-for-rubyists/registrations/new
 
-FINALLY: check out the notes below (and thanks for coming to the talk!)
+== FINALLY: check out the notes below (and thanks for coming to the talk!)
 
 -------------------------------------------------- 
 
