@@ -1,5 +1,3 @@
-Hi Boston.rb!
-
 == FIRST: If you liked my talk, you'll probably dig my screencast: Vim for Rails Developers
 === Check it out here: http://www.codeulatescreencasts.com/products/vim-for-rails-developers
 
