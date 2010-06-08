@@ -8,11 +8,9 @@
 
 -------------------------------------------------- 
 
-(skip the intro!)
+Fundamental techniques for mastering vim:
 
-4 fundamental techniques for mastering vim
-
-First: Read the freakin' manual
+First: Reading the freakin' manual
   vim is the best-documented open source tool I've ever used
   a ton of effort has gone into the help
   the ROI is high
@@ -42,7 +40,7 @@ Fourth: Learn all the single-letter commands
   graphical cheat sheet
 
 Bonus: stay on the home row
-  don't use the arrow keys
+  don't use the arrow keys -- quit cold turkey; it's my one wish
   don't use escape (can use C-[)
 
 If you do these five fundamental things, you are well on your way to vim mastery.
@@ -61,22 +59,19 @@ RTFM
   what if you don't know what you want? tab complete and C-d
   #vim on freenode
   vimtips wiki - specifically top content
-  life, the universe, and everything - 42
+  life, the universe, and everything = 42
 
-(16 minutes)
-
-Grab-bag (25 minutes)
+Grab-bag 
   Registers   
-    basic example
-    1-9 is last deletes
-    Unnamed register
+    named with " and a letter/number
+    1-9 hold last 9 deletes
+    Unnamed register is default target for yanks, deletes. default source for puts
     Named registers
       "% - useful for sourcing vimrc 
       "0 last yank
   Macros
     macros are related to registers
     macro is just a recording of keystrokes into a register
-    change all methods to self
     tips for reusability
       move the cursor by searching
       pay attention to the start and end points
@@ -86,44 +81,40 @@ Grab-bag (25 minutes)
   Text states (think branches of undo tree): 
     g-, g+, 
     :earlier, :later
-    joke
   Bind lots of leaders
-  C-s
-  c-o for undoing jumps
-  set number so you can jump to lines (holdng j or k is a vim smell)
-  C-d and C-u
+    mine my dotfiles for ideas: http://github.com/r00k/dotfiles
+  :set number so you can jump to lines (holdng j or k is a vim smell)
   gi (go to last insert)
-  Change/delete inside ( { " '
   caw
-
-** Take a break.  Poll the audience. **
+  Change/delete inside ( { " '
+  c-o for undoing jumps
+  C-s
 
 Tags
-  setup: install exuberant ctags, run ctags -R in rails dir (after vendoring rails so it can pick up tags)
-  respond_to -> :ts
-  :ts[elect] to show all matching tags
+  setup: install exuberant ctags, 
+         run ctags -R in rails dir (after vendoring rails so it can pick up tags)
+  C-] on identifiers, or :tag <identifier>
+  :ts[elect] <identifier> for tags with mult. matches
 
-Rails.vim
-  2 strengths: you don't need to leave vim, and navigation
-  Namespaced under :R
-  Rails code/demo
-  Rgenerate scaffold user
-  Rmigration
-  Rinvert (point out remove_column gotcha, but REMOVE the code)
-  (go to controller) - gf to User and ApplicationController
-  Rmodel, RVunittest, RSunittest
-  Use Rake on functional test, fails, Rmigration
-  Rake runs migration
-  Rextract
-  Rserver, but what if other instance Rserver!
-  Rdoc
+Rails.vim       
+  :help rails to learn all commands
+  Rcontroller  --> jump to controller
+  RVcontroller --> "    "  "          in vertical split
+  RScontroller --> "    "  "          in horizontal split
+  Rmigration   --> jump to latest migration
+  Rinvert      --> writes the self.down of a migration for you!
+  Rake in a fileruns tests or migrations
+  Rextract will extract a partial highlighted in visual mode
 
 FuzzyFinder
+  installation instructions on my blog: 
+    http://codeulate.com/2010/02/installing-fuzzyfinder_textmate-textmates-cmdt-in-vim/ 
 
 (surround.vim) 
-    interpolated string
-    delete surroundings
-    change tags
+    cs = change surroundings
+    ex: cs'"  <-- change surrounding single quotes to double-quotes
+    ds = delete surroundings
+    ysw' <-- surround this w(ord) with single quotes
 
 =====================================================================================================
 
@@ -138,13 +129,3 @@ Snipmate
   cla (multi-choice AND calls out to vim)
   easy to write your own
 
-Fugitive.vim
-  Statusline
-  Gcommit -a -m "foo"
-  Binding these
-  Gmove
-
-General stuff
-  C+w for delete word
-  Fix transposed chars
-  tilde
