@@ -37,7 +37,7 @@ Third: Keep a tool sharpening list
 Fourth: Learn all the single-letter commands
   Pareto or 80/20
   quiz yourself: what does t do? capital t? semicolon?
-  graphical cheat sheet
+  graphical cheat sheet: http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
 
 Bonus: stay on the home row
   don't use the arrow keys -- quit cold turkey; it's my one wish
