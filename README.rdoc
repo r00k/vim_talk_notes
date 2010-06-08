@@ -58,7 +58,7 @@ RTFM
   recommend Editing Effectively
   what if you don't know what you want? tab complete and C-d
   #vim on freenode
-  vimtips wiki - specifically top content
+  vimtips wiki: http://vim.wikia.com/wiki/Vim_Tips_Wiki
   life, the universe, and everything = 42
 
 Grab-bag 
