@@ -24,6 +24,16 @@ class User < ActiveRecord::Base
     end
   end
 
+  def has_credit_card?
+    braintree_credit_card_token.present?
+  end
+
+  def credit_card
+    if has_credit_card?
+      Braintree::CreditCard.find(braintree_credit_card_token)
+    end
+  end
+
   def add_charging_error
     errors.add(:base, "We couldn't charge your credit card")
   end

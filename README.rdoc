@@ -49,7 +49,7 @@ Total noob?  Use vimtutor.
 Discuss the layout of the rest of the talk.
 
 RTFM
-  two most-important commands
+  two most-important commands: C-], C-o
   :h buffers
   recommend Editing Effectively
   what if you don't know what you want? tab complete and C-d
@@ -58,6 +58,7 @@ RTFM
   life, the universe, and everything = 42
 
 Grab-bag 
+  Command-t
   Registers   
     named with " and a letter/number
     1-9 hold last 9 deletes
@@ -102,26 +103,18 @@ Rails.vim
   Rake in a fileruns tests or migrations
   Rextract will extract a partial highlighted in visual mode
 
-FuzzyFinder
-  installation instructions on my blog: 
-    http://codeulate.com/2010/02/installing-fuzzyfinder_textmate-textmates-cmdt-in-vim/ 
-
 (surround.vim) 
     cs = change surroundings
     ex: cs'"  <-- change surrounding single quotes to double-quotes
     ds = delete surroundings
     ysw' <-- surround this w(ord) with single quotes
 
-=====================================================================================================
-
-Bonus material:
-
 Snipmate
-  def
   defp
+  defs
+  kjefp
   deft
   each
   ed
   cla (multi-choice AND calls out to vim)
   easy to write your own
-
