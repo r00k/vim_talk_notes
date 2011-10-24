@@ -1,10 +1,6 @@
-== FIRST: If you liked my talk, you'll probably dig my screencast: Vim for Rails Developers
-=== Check it out here: http://www.codeulatescreencasts.com/products/vim-for-rails-developers
+If you liked this talk, you'll probably dig my screencast: Vim for Rails Developers
 
-== SECOND: If you're in or near Boston, I'm giving a vim training on June 25th
-=== Check it out here: https://training.thoughtbot.com/courses/12-vim-for-rubyists/registrations/new
-
-== FINALLY: check out the notes below (and thanks for coming to the talk!)
+Check it out here: http://www.codeulatescreencasts.com/products/vim-for-rails-developers
 
 -------------------------------------------------- 
 
