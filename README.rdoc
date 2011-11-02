@@ -1,9 +1,3 @@
-If you liked this talk, you'll probably dig my screencast: Vim for Rails Developers
-
-Check it out here: http://www.codeulatescreencasts.com/products/vim-for-rails-developers
-
--------------------------------------------------- 
-
 Fundamental techniques for mastering vim:
 
 First: Reading the freakin' manual
@@ -87,6 +81,9 @@ Grab-bag
   c-o for undoing jumps
   C-s
 
+IDE-like functionality
+  diffthis
+
 Tags
   setup: install exuberant ctags, 
          run ctags -R in rails dir (after vendoring rails so it can pick up tags)
@@ -118,3 +115,5 @@ Snipmate
   ed
   cla (multi-choice AND calls out to vim)
   easy to write your own
+
+If you liked this talk, you might like my screencast: Vim for Rails Developers -- http://www.codeulatescreencasts.com/products/vim-for-rails-developers

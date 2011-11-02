@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
     create_customer_in_braintree && create_subscription_in_braintree
   end
 
+
   def create_customer_in_braintree
     customer_result = BraintreeWrapper.create_customer_for(self)
     if customer_result.success?
