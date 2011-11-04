@@ -1,5 +1,3 @@
-Buenas tardes!
-
 ======== Vocab ==========
 
 tool - herramienta
@@ -26,13 +24,27 @@ single (single letter keys)
 command
 motion
 manual
+designers
+C++
+command line
+experts
 
 
-======== Planea ==========
+======== Plan ==========
+
+Introducción
+  yo 
+    boston
+    thoughtbot
+    emocionado
+  espanol
+    espero que puedan entender mi español, pero si no, pueden escuchar a la traducción en inglés y entenderlo mejor
 
 Por que vim?
-  mas rapido que algun editor
-  mas rapido que to ide
+  mas rapido para escribir códigos
+  no necesitan un ide
+  todas las personas a thoughtbot usan vim
+
 
 Como es mas rápido?
   es modal
