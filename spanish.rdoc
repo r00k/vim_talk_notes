@@ -27,7 +27,9 @@ manual
 designers
 C++
 command line
-experts
+beginners - principiantes
+intermediates - intermedios
+experts - expertos
 
 
 ======== Plan ==========
@@ -40,11 +42,16 @@ Introducción
   espanol
     espero que puedan entender mi español, pero si no, pueden escuchar a la traducción en inglés y entenderlo mejor
 
+La tema de charla
+  quién conoce a vim?
+  no puedo enseñar mucho de vim in trienta minutos porque es demasiado grande
+  pero, voy a mostrar unas características que espero que emocionaélos 
+  empiezo con temas para principiantes, y despues para intermedios y export
+
 Por que vim?
   mas rapido para escribir códigos
   no necesitan un ide
   todas las personas a thoughtbot usan vim
-
 
 Como es mas rápido?
   es modal
