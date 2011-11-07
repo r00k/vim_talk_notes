@@ -11,9 +11,9 @@ string
 paren
 quote
 single-quote
-double-quote
+double-quote - comillas (double check)
 colon
-character
+character - charácter
 edit
 edits
 modal
@@ -43,18 +43,23 @@ Introducción
     espero que puedan entender mi español, pero si no, pueden escuchar a la traducción en inglés y entenderlo mejor
 
 La tema de charla
-  quién conoce a vim?
+  quién conoce vim?
   no puedo enseñar mucho de vim in trienta minutos porque es demasiado grande
   pero, voy a mostrar unas características que espero que emocionaélos 
-  empiezo con temas para principiantes, y despues para intermedios y export
+  empiezo con temas para principiantes, y despues para intermedios y expertos
 
 Por que vim?
   mas rapido para escribir códigos
   no necesitan un ide
-  todas las personas a thoughtbot usan vim
+  todas las personas a thoughtbot usan vim - incluyendo los (designers)
 
 Como es mas rápido?
-  es modal
+  la idea principal de vim es que mucho del tiempo cuando usas un editor de texto, no estas escribiendo mucho código
+  la verdad es que tomas mucho tiempo mover el puntero al lugar donde quieres cambiar un poquito de texto
+  y usualmente, no cambias mucho texto, solo un carácter o dos
+  los creadores de vim, se dio cuenta de ésta idea, y por eso, vim es modal
+    
+  modal normal
 
 
 
