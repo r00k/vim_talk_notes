@@ -1,36 +1,56 @@
+Today's plan:
+
+* decide on topics (english)
+* outline order of topics
+* start translating 
+* make sure all vocab is defined
+* alphabetize vocab
+* 3 run-throughs, starting at 2:15pm
+* print notes
+
+
+
+To set up talk:
+  * prep two files in ybuy that are similar but different
+  * open macvim 
+  * cd into ~/code/ybuy
+  * set up guard
+
 ======== Vocab ==========
 
 tool - herramienta
 cursor - puntero
 editor - editor
-
-code
-'most of the time'
-optimized
-string
-paren
+delete - borrar
+string - cadena?
+paren - paréntesis
 quote
-single-quote
-double-quote - comillas (double check)
+single-quote - comillas simples
+double-quote - comillas (dobles?)
 colon
 character - charácter
 edit
 edits
-modal
-modes
-type
-keys
-single (single letter keys)
-command
+modal - modal
+modes - modos
+type - escribir
+keys - teclas
+single - sencillo
+command - orden/comando
 motion
-manual
-designers
-C++
-command line
+designers - diseñadores
+command line - linea de comandos
 beginners - principiantes
 intermediates - intermedios
 experts - expertos
-
+race - carrera
+square brace - ???
+stop - pare
+mouse - el ratón
+files - archivos 
+jump - saltar
+simple - simple
+screen - pantalla
 
 ======== Plan ==========
 
@@ -40,143 +60,61 @@ Introducción
     thoughtbot
     emocionado
   espanol
-    espero que puedan entender mi español, pero si no, pueden escuchar a la traducción en inglés y entenderlo mejor
+    espero que puedan entenderme, pero si no, pueden escuchar a la traducción en inglés y entenderlo mejor
 
 La tema de charla
   quién conoce vim?
   no puedo enseñar mucho de vim in trienta minutos porque es demasiado grande
-  pero, voy a mostrar unas características que espero que emocionaélos 
+  pero, voy a mostrar unas características que espero que emocionaése
+  voy a discutir 
   empiezo con temas para principiantes, y despues para intermedios y expertos
 
 Por que vim?
   mas rapido para escribir códigos
-  no necesitan un ide
+  he usado emacs, textmate, eclipse
+  si piensas que tu IDE es mas rápido, podemos tener una carrera despues de la charla
   todas las personas a thoughtbot usan vim - incluyendo los (designers)
+  no necesitan un ide - vim es mas rápido, y tambien puedues hacer todas las cosas que necesitas para desarollar ruby
 
-Como es mas rápido?
+Por que es mas rápido?
   la idea principal de vim es que mucho del tiempo cuando usas un editor de texto, no estas escribiendo mucho código
-  la verdad es que tomas mucho tiempo mover el puntero al lugar donde quieres cambiar un poquito de texto
-  y usualmente, no cambias mucho texto, solo un carácter o dos
+  la verdad es que mucho del tiempo, estás moviendo el puntero al lugar donde quieres cambiar un poquito de texto
+  y usualmente, no cambias mucho texto, solo un carácter o dos charácteres
   los creadores de vim, se dio cuenta de ésta idea, y por eso, vim es modal
-    
-  modal normal
 
+Staying on the home row
+  se llama 'home row' en ingles, la fila con 'asdfghkl' 
 
+Beginners:
+  vimtutor
+  help
+  learn all single letter commands
+  write down the commands you are trying to learn
 
-First: Reading the freakin' manual
-  vim is the best-documented open source tool I've ever used
-  a ton of effort has gone into the help
-  the ROI is high
-  two problems:
-    it takes some practice
-    you're gonna forget what you read
-
-Second: Keep a cheat sheet on your desk
-  learning vim is a process of accretion
-  gradually increase by the steady addition of smaller parts
-  the only way to become an expert is by steadily learning commands
-  the best way to learn lots of commands is by focusing on a few at a time
-  keep your eyes open for chances to use the command
-  to build muscle memory, you must use it in practice
-  i'll back up
-
-Third: Keep a tool sharpening list
-  annoyances and inefficiencies
-  :Q bound to :q example (question, show of hands)
-  slowly sanding down the rough edges in your environment
-  Don't break your flow, come back to it
-  Put it on the back of your cheat sheet
-
-Fourth: Learn all the single-letter commands
-  Pareto or 80/20
-  quiz yourself: what does t do? capital t? semicolon?
-  graphical cheat sheet: http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html
-
-Bonus: stay on the home row
-  don't use the arrow keys -- quit cold turkey; it's my one wish
-  don't use escape (can use C-[)
-
-If you do these five fundamental things, you are well on your way to vim mastery.
-IF you fall asleep now, you'll have already seen the most-important stuff.
-After these, the rest of what I'm going to show you is just gravy.  
-But sometimes the gravy is the best part, so let's dig in.
-
-Total noob?  Use vimtutor.
-
-Discuss the layout of the rest of the talk.
-
-RTFM
-  two most-important commands: C-], C-o
-  :h buffers
-  recommend Editing Effectively
-  what if you don't know what you want? tab complete and C-d
-  #vim on freenode
-  vimtips wiki: http://vim.wikia.com/wiki/Vim_Tips_Wiki
-  life, the universe, and everything = 42
-
-Grab-bag 
+Intermediates:
   Command-t
-  Registers   
-    named with " and a letter/number
-    1-9 hold last 9 deletes
-    Unnamed register is default target for yanks, deletes. default source for puts
-    Named registers
-      "% - useful for sourcing vimrc 
-      "0 last yank
   Macros
-    macros are related to registers
-    macro is just a recording of keystrokes into a register
-    tips for reusability
-      move the cursor by searching
-      pay attention to the start and end points
-  Marks
-    A-Z are global
-    0-9 where you exited vim
-  Text states (think branches of undo tree): 
-    g-, g+, 
-    :earlier, :later
-  Bind lots of leaders
-    mine my dotfiles for ideas: http://github.com/r00k/dotfiles
-  :set number so you can jump to lines (holdng j or k is a vim smell)
-  gi (go to last insert)
-  caw
+  Rails.vim
+    :help rails to learn all commands
+    Rcontroller  --> jump to controller
+    RVcontroller --> "    "  "          in vertical split
+    RScontroller --> "    "  "          in horizontal split
+    Rmigration   --> jump to latest migration
+  (surround.vim) 
+      cs = change surroundings
+      ex: cs'"  <-- change surrounding single quotes to double-quotes
+      ds = delete surroundings
+      ysw' <-- surround this w(ord) with single quotes
   Change/delete inside ( { " '
-  c-o for undoing jumps
-  C-s
-
-IDE-like functionality
+  Snipmate
+    defp
+    defs
+    kjefp
+    deft
+    each
+    ed
+    cla (multi-choice AND calls out to vim)
+    easy to write your own
   diffthis
-
-Tags
-  setup: install exuberant ctags, 
-         run ctags -R in rails dir (after vendoring rails so it can pick up tags)
-  C-] on identifiers, or :tag <identifier>
-  :ts[elect] <identifier> for tags with mult. matches
-
-Rails.vim       
-  :help rails to learn all commands
-  Rcontroller  --> jump to controller
-  RVcontroller --> "    "  "          in vertical split
-  RScontroller --> "    "  "          in horizontal split
-  Rmigration   --> jump to latest migration
-  Rinvert      --> writes the self.down of a migration for you!
-  Rake in a fileruns tests or migrations
-  Rextract will extract a partial highlighted in visual mode
-
-(surround.vim) 
-    cs = change surroundings
-    ex: cs'"  <-- change surrounding single quotes to double-quotes
-    ds = delete surroundings
-    ysw' <-- surround this w(ord) with single quotes
-
-Snipmate
-  defp
-  defs
-  kjefp
-  deft
-  each
-  ed
-  cla (multi-choice AND calls out to vim)
-  easy to write your own
-
-If you liked this talk, you might like my screencast: Vim for Rails Developers -- http://www.codeulatescreencasts.com/products/vim-for-rails-developers
+  Run tests from inside vim
+  :earlier, :later (5s, 5m, 5h, 5d)
