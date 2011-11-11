@@ -10,6 +10,7 @@ Today's plan:
 
 To set up talk:
   * prep two files in ybuy that are similar but different
+  * make sure ybuy specs run
   * open macvim 
   * cd into ~/code/ybuy
   * set up guard
@@ -19,8 +20,10 @@ To set up talk:
 beginners - principiantes
 character - charácter
 colon - dos puntos
+combine - combinar
 commands - ordenes/comandos
 command line - linea de comandos
+configuration - configuración
 cursor - puntero
 delete - borrar
 designers - diseñadores
@@ -38,6 +41,7 @@ modal - modal
 modes - modos
 motion - movimiento
 mouse - el ratón
+object - objectos
 paren - paréntesis
 quote - comilla sencilla
 race - carrera
@@ -94,13 +98,20 @@ Beginners:
   write down the commands you are trying to learn
 
 Intermediates:
+  combinar comandos de verbos y objectos
+    en vim, 'd' es un verbo, significa borrar (es 'delete' en ingles, hace mas sentido :))
+    si tecleo 'd', nada pasa, porque vim esta esperando para un objecto
+    si tecleo 'w', el puntero mueve por pallabras, pero, puedo decir a vim borrar por pallabras tambien
+    d3w
+    dt/
   Command-t
-  Macros
   Rails.vim
     :help rails to learn all commands
+    gf
     Rcontroller  --> jump to controller
     RVcontroller --> "    "  "          in vertical split
     RScontroller --> "    "  "          in horizontal split
+    Rview
     Rmigration   --> jump to latest migration
   (surround.vim) 
       cs = change surroundings
