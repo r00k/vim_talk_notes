@@ -116,4 +116,4 @@ Snipmate
   cla (multi-choice AND calls out to vim)
   easy to write your own
 
-If you liked this talk, you might like my screencast: Vim for Rails Developers -- http://www.codeulatescreencasts.com/products/vim-for-rails-developers
+If you liked this talk, you might like my screencast: Vim for Rails Developers -- https://learn.thoughtbot.com/products/2-vim-for-rails-developers
